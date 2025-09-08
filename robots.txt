@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR_GH_USERNAME.github.io/geo-test-page/sitemap.xml
