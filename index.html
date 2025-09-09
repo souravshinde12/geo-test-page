@@ -22,15 +22,10 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "UltraLite Jacket",
-    "image": [
-      "https://souravshinde12.github.io/geo-test-page/product.jpg"
-    ],
+    "image": ["https://souravshinde12.github.io/geo-test-page/product.jpg"],
     "description": "A 300g windproof, water-resistant shell with breathable lining. Everyday protection with packable convenience. Sizes XS–XL.",
     "sku": "ULJ-001",
-    "brand": {
-      "@type": "Brand",
-      "name": "ACME Gear"
-    },
+    "brand": {"@type":"Brand","name":"ACME Gear"},
     "color": "Charcoal",
     "material": "Ripstop polyester with DWR finish",
     "size": ["XS","S","M","L","XL"],
@@ -44,11 +39,7 @@
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "128"
-    }
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"128"}
   }
   </script>
 
@@ -58,26 +49,10 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Is the UltraLite Jacket suitable for light rain?",
-        "acceptedAnswer":{"@type":"Answer","text":"Yes. The DWR finish sheds light rain and the windproof shell keeps you warm in gusty conditions."}
-      },
-      {
-        "@type":"Question",
-        "name":"What sizes are available?",
-        "acceptedAnswer":{"@type":"Answer","text":"XS, S, M, L, XL. Check the size guide on the page for exact measurements."}
-      },
-      {
-        "@type":"Question",
-        "name":"Do you ship within Australia?",
-        "acceptedAnswer":{"@type":"Answer","text":"Yes. We ship Australia-wide. Orders over $50 qualify for free standard shipping."}
-      },
-      {
-        "@type":"Question",
-        "name":"What is your returns policy?",
-        "acceptedAnswer":{"@type":"Answer","text":"We offer 30-day returns on unused items in original condition. See Shipping & Returns for details."}
-      }
+      {"@type":"Question","name":"Is the UltraLite Jacket suitable for light rain?","acceptedAnswer":{"@type":"Answer","text":"Yes. The DWR finish sheds light rain and the windproof shell keeps you warm in gusty conditions."}},
+      {"@type":"Question","name":"What sizes are available?","acceptedAnswer":{"@type":"Answer","text":"XS, S, M, L, XL. Check the size guide on the page for exact measurements."}},
+      {"@type":"Question","name":"Do you ship within Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. We ship Australia-wide. Orders over $50 qualify for free standard shipping."}},
+      {"@type":"Question","name":"What is your returns policy?","acceptedAnswer":{"@type":"Answer","text":"We offer 30-day returns on unused items in original condition. See Shipping & Returns for details."}}
     ]
   }
   </script>
@@ -96,7 +71,7 @@
   </script>
 
   <style>
-    :root{--ink:#111;--muted:#666;--line:#eee;--accent:#0a7;}
+    :root{--ink:#111;--muted:#666;--line:#eee;--accent:#0a7}
     *{box-sizing:border-box}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;margin:0;background:#fff}
     header,main,footer{max-width:980px;margin:0 auto;padding:20px}
@@ -110,14 +85,13 @@
     h2{margin-top:28px}
     .pill{display:inline-block;border:1px solid var(--line);padding:4px 10px;border-radius:999px;margin-right:6px;margin-bottom:6px}
     .kvs{display:grid;grid-template-columns:1fr 2fr;gap:8px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fafafa}
-    dl{margin:0}
-    dt{font-weight:600}
-    dd{margin:0 0 10px 0}
+    dl{margin:0} dt{font-weight:600} dd{margin:0 0 10px 0}
     .section{margin-top:22px}
     .reviews{display:flex;align-items:center;gap:8px}
     .star{color:#f5a623}
     footer{border-top:1px solid var(--line);margin-top:24px}
     a{color:var(--accent);text-decoration:none}
+    .callout{border:1px solid var(--line);background:#fcfffc;padding:12px;border-radius:12px}
   </style>
 </head>
 <body>
@@ -127,6 +101,13 @@
   </header>
 
   <main>
+    <!-- Search summary helps LLMs map to “best/budget/au/returns” intent -->
+    <section class="callout">
+      <strong>Search summary:</strong>
+      Best lightweight, windproof, water-resistant jacket in Australia • ~300g • sizes XS–XL • AUD $129 • free AU shipping $50+ • 30-day returns • 12-month warranty.
+      <div class="muted">Structured data provided via JSON-LD (Product, FAQ, Breadcrumbs).</div>
+    </section>
+
     <section class="grid">
       <div>
         <img src="product.jpg" alt="UltraLite Jacket in charcoal, front view">
