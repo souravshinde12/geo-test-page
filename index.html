@@ -2,41 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>UltraLite Jacket – Test Product | ACME Gear</title>
-  <meta name="description" content="UltraLite Jacket – windproof, water-resistant, 300g. Sizes XS–XL. Free shipping over $50.">
+  <title>UltraLite Jacket | Windproof, Water-Resistant, 300g | ACME Gear</title>
+  <meta name="description" content="UltraLite Jacket by ACME Gear — a 300g windproof, water-resistant shell with breathable lining. Sizes XS–XL. Free AU shipping over $50 and 30-day returns.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Canonical (toggle OFF in canonical ablation) -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://souravshinde12.github.io/geo-test-page/">
 
-  <!-- Open Graph / Twitter (optional but useful discoverability) -->
-  <meta property="og:title" content="UltraLite Jacket – Test Product">
-  <meta property="og:description" content="Windproof, water-resistant, 300g. Sizes XS–XL.">
-  <meta property="og:image" content="https://souravshinde12.github.io/geo-test-page/product.jpg">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="UltraLite Jacket — Windproof, Water-Resistant (300g)">
+  <meta property="og:description" content="Feather-light 300g shell for windy, drizzly days. Sizes XS–XL. Free AU shipping $50+. 30-day returns.">
+  <meta property="og:image" content="https://souravshinde12.github.io/geo-test-page/assets/product.jpg">
   <meta property="og:url" content="https://souravshinde12.github.io/geo-test-page/">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- JSON-LD: Product (toggle OFF in jsonld ablation) -->
+  <!-- JSON-LD: Product -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "UltraLite Jacket",
     "image": [
-      "https://souravshinde12.github.io/geo-test-page/product.jpg"
+      "https://souravshinde12.github.io/geo-test-page/assets/product.jpg"
     ],
-    "description": "Windproof, water-resistant jacket. 300g. Sizes XS–XL.",
+    "description": "A 300g windproof, water-resistant shell with breathable lining. Everyday protection with packable convenience. Sizes XS–XL.",
     "sku": "ULJ-001",
     "brand": {
       "@type": "Brand",
       "name": "ACME Gear"
     },
+    "color": "Charcoal",
+    "material": "Ripstop polyester with DWR finish",
+    "size": ["XS","S","M","L","XL"],
+    "weight": "0.3 kg",
     "offers": {
       "@type": "Offer",
       "url": "https://souravshinde12.github.io/geo-test-page/",
       "priceCurrency": "AUD",
       "price": "129.00",
-      "availability": "https://schema.org/InStock"
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -46,7 +52,7 @@
   }
   </script>
 
-  <!-- JSON-LD: FAQ (toggle OFF in faq ablation) -->
+  <!-- JSON-LD: FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -55,23 +61,28 @@
       {
         "@type":"Question",
         "name":"Is the UltraLite Jacket suitable for light rain?",
-        "acceptedAnswer":{"@type":"Answer","text":"Yes. It is water-resistant and windproof, ideal for light rain and windy days."}
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. The DWR finish sheds light rain and the windproof shell keeps you warm in gusty conditions."}
       },
       {
         "@type":"Question",
         "name":"What sizes are available?",
-        "acceptedAnswer":{"@type":"Answer","text":"XS, S, M, L, XL. Check the size guide on this page for exact measurements."}
+        "acceptedAnswer":{"@type":"Answer","text":"XS, S, M, L, XL. Check the size guide on the page for exact measurements."}
       },
       {
         "@type":"Question",
         "name":"Do you ship within Australia?",
-        "acceptedAnswer":{"@type":"Answer","text":"Yes, Australia-wide. Free shipping on orders over $50."}
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. We ship Australia-wide. Orders over $50 qualify for free standard shipping."}
+      },
+      {
+        "@type":"Question",
+        "name":"What is your returns policy?",
+        "acceptedAnswer":{"@type":"Answer","text":"We offer 30-day returns on unused items in original condition. See Shipping & Returns for details."}
       }
     ]
   }
   </script>
 
-  <!-- (Optional) JSON-LD: Breadcrumbs -->
+  <!-- JSON-LD: Breadcrumbs -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -85,57 +96,103 @@
   </script>
 
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;margin:0}
-    header,main,footer{max-width:900px;margin:0 auto;padding:16px}
-    header{border-bottom:1px solid #eee}
-    .grid{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:start}
-    img{max-width:100%;border-radius:8px}
-    .badge{display:inline-block;background:#111;color:#fff;padding:2px 8px;border-radius:999px;font-size:12px}
-    .faq dt{font-weight:700;margin-top:12px}
-    .faq dd{margin:0 0 8px 0}
-    .muted{color:#666;font-size:14px}
+    :root{--ink:#111;--muted:#666;--line:#eee;--accent:#0a7;}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;margin:0;background:#fff}
+    header,main,footer{max-width:980px;margin:0 auto;padding:20px}
+    header{border-bottom:1px solid var(--line)}
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
+    img{max-width:100%;border-radius:12px;display:block}
+    .price{font-size:20px;font-weight:700}
+    .badge{display:inline-block;background:var(--ink);color:#fff;padding:2px 10px;border-radius:999px;font-size:12px;margin-left:8px}
+    .muted{color:var(--muted);font-size:14px}
+    h1{font-size:28px;margin:0 0 6px}
+    h2{margin-top:28px}
+    .pill{display:inline-block;border:1px solid var(--line);padding:4px 10px;border-radius:999px;margin-right:6px;margin-bottom:6px}
+    .kvs{display:grid;grid-template-columns:1fr 2fr;gap:8px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fafafa}
+    dl{margin:0}
+    dt{font-weight:600}
+    dd{margin:0 0 10px 0}
+    .section{margin-top:22px}
+    .reviews{display:flex;align-items:center;gap:8px}
+    .star{color:#f5a623}
+    footer{border-top:1px solid var(--line);margin-top:24px}
+    a{color:var(--accent);text-decoration:none}
   </style>
 </head>
 <body>
   <header>
-    <h1>UltraLite Jacket <span class="badge">Test Page</span></h1>
-    <p class="muted">ACME Gear • SKU ULJ-001 • AUD $129</p>
+    <h1>UltraLite Jacket <span class="badge">In Stock</span></h1>
+    <p class="muted">ACME Gear • SKU ULJ-001</p>
   </header>
 
   <main>
     <section class="grid">
       <div>
-        <img src="product.jpg" alt="UltraLite Jacket in charcoal colour">
+        <img src="assets/product.jpg" alt="UltraLite Jacket in charcoal, front view">
       </div>
       <div>
-        <h2>Why this page exists</h2>
+        <p class="price">AUD $129.00</p>
         <p>
-          This page is designed for **GEO experiments**. We systematically toggle structural elements
-          (JSON-LD Product, FAQ schema, canonical, robots, sitemap) and measure inclusion/citations in
-          AI-generated answers (ChatGPT, Gemini, DeepSeek, Perplexity).
+          A feather-light (300g) shell for everyday wind and drizzle. The UltraLite pairs a windproof outer with a water-resistant DWR finish and a breathable lining—comfortable for city commutes, day hikes and travel.
         </p>
-        <h3>Key product specs</h3>
-        <ul>
-          <li>Windproof, water-resistant shell</li>
-          <li>Weight ~300g</li>
-          <li>Sizes XS–XL</li>
-          <li>Free AU shipping on orders &gt; $50</li>
-        </ul>
+
+        <div class="section">
+          <strong>Available sizes:</strong>
+          <span class="pill">XS</span><span class="pill">S</span><span class="pill">M</span><span class="pill">L</span><span class="pill">XL</span>
+        </div>
+
+        <div class="section reviews">
+          <div class="star">★★★★★</div>
+          <div class="muted">4.5 (128 reviews)</div>
+        </div>
+
+        <div class="section">
+          <h3>Why you’ll love it</h3>
+          <ul>
+            <li>Windproof shell with water-resistant DWR finish</li>
+            <li>Breathable lining for comfort on the move</li>
+            <li>Only 300g — easy to pack and carry</li>
+            <li>Free AU shipping on orders over $50</li>
+            <li>30-day returns & 12-month warranty</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Size Guide</h2>
-      <p class="muted">Chest: XS 84–89cm · S 90–95 · M 96–101 · L 102–107 · XL 108–113</p>
+    <section class="section">
+      <h2>Tech specs</h2>
+      <div class="kvs">
+        <dl>
+          <dt>Weight</dt><dd>~300g</dd>
+          <dt>Material</dt><dd>Ripstop polyester, DWR finish</dd>
+          <dt>Fit</dt><dd>Regular</dd>
+          <dt>Colour</dt><dd>Charcoal</dd>
+          <dt>Best for</dt><dd>Windy, drizzly days; city & travel</dd>
+        </dl>
+        <dl>
+          <dt>Sizes</dt><dd>XS, S, M, L, XL</dd>
+          <dt>Care</dt><dd>Machine wash cold, gentle. Line dry. Do not tumble dry.</dd>
+          <dt>Warranty</dt><dd>12-month manufacturing warranty</dd>
+          <dt>Returns</dt><dd>30-day returns in original condition</dd>
+        </dl>
+      </div>
     </section>
 
-    <section>
+    <section class="section">
+      <h2>Shipping & returns</h2>
+      <p class="muted">Australia-wide delivery. Free standard shipping on orders over $50. Express options available at checkout. Returns within 30 days.</p>
+    </section>
+
+    <section class="section">
       <h2>FAQs</h2>
       <dl class="faq">
         <dt>Is it machine washable?</dt>
-        <dd>Yes, cold gentle cycle. Do not tumble dry.</dd>
-        <dt>Is there a warranty?</dt>
-        <dd>12-month manufacturing warranty. 30-day returns.</dd>
+        <dd>Yes — cold, gentle cycle. Close zips and wash with similar colours. Line dry.</dd>
+        <dt>Is it fully waterproof?</dt>
+        <dd>It’s water-resistant for light rain. For heavy downpours, pair with a dedicated rain shell.</dd>
+        <dt>How does sizing run?</dt>
+        <dd>Regular fit. If you’re between sizes or layering, consider sizing up.</dd>
       </dl>
     </section>
   </main>
